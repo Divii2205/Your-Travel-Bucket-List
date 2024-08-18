@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Bucket List</title>
+    <link rel="icon" href="Travel Logo.png" type="image/icon type" style="caret-shape:auto;">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<nav> <br> <br> </nav>
+<body>
+    <div class="container">
+        <h1 text style="color: #605a5a;"><span id="greeting" class="greeting"></span>
+            Travel Bucket List
+        </h1>
+        <div class="form-group">
+            <input type="text" id="destinationInput" placeholder="Enter destination">
+            <textarea id="detailsInput" placeholder="Enter details about the destination"></textarea>
+            <button onclick="addDestination()">Add Destination</button>
+        </div>
+        <ul id="bucketList"></ul>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>Enter Your Username</h2>
+            <input type="text" id="usernameInput" placeholder="Username" autofocus>
+            <button onclick="submitUsername()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
